@@ -1,12 +1,13 @@
 body {
-  background-color: #35363d;
-  color: #D2D7D3;
+  background-color: #a21d34;
+  color: #E4F1FE;
   font-family: "Lucida Grande";
   font-size: 16px;
+  margin: 0px;
 }
 
 header #sideNav {
-  background-color: #D2D7D3;
+  background-color: white;
   display: none;
   flex-flow: column nowrap;
   width: auto;
@@ -16,23 +17,36 @@ header #sideNav {
   top: 0px;
   right: 0px;
   overflow-x: hidden;
-  padding-top: 22px;
+  padding-top: 20px;
 }
 header #sideNav a, header #sideNav span {
-  font-size: 16px;
+  font-size: 24px;
   padding: 5px 0px 6px 20px;
   margin: 0px 20px 0px 0px;
   text-decoration: none;
-  color: #35363d;
+  color: #a21d34;
 }
 header #sideNav a:hover {
-  color: white;
+  color: #5c1414;
 }
 header #sideNav a:visited {
-  color: #35363d;
+  color: #a21d34;
 }
 header #sideNav a:active {
   color: #9a9a9a;
+}
+
+.openNavButton {
+  position: fixed;
+  right: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.closeNavButton {
+  position: relative;
+  padding-left: 128px;
+  font-size: 24px;
 }
 
 main {
@@ -45,25 +59,37 @@ main section {
   width: 100vw;
 }
 main .topSection {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-  color: red;
+  object-fit: cover;
+}
+main .topSection h1, main .topSection h2 {
+  font-family: "Bungee Inline", cursive;
+  font-size: 50px;
+}
+main .topSection img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+  z-index: -5;
+  object-fit: cover;
 }
 main .middleSection {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  color: red;
 }
 main .bottomSection {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  color: red;
 }
 main .bottomSection form {
   width: 500px;
@@ -79,18 +105,6 @@ main .bottomSection form fieldset div {
 }
 main .bottomSection form fieldset div label {
   width: 80px;
-}
-.openNavButton {
-  position: fixed;
-  right: 20px;
-  padding-top: 20px;
-  font-size: 24px;
-}
-
-.closeNavButton {
-  position: relative;
-  padding-left: 80px;
-  font-size: 24px;
 }
 
 .labelsAndInputs {
