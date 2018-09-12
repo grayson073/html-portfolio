@@ -82,8 +82,6 @@ main {
 
         img {
             position: absolute;
-            left: 0;
-            top: 0;
             width: 100vw;
             height: 100vh;
             opacity: 0.3;
@@ -96,12 +94,30 @@ main {
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+
+        img {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.3;
+            z-index: -5;
+            object-fit: cover;
+        }
     }
     .bottomSection {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+
+        img {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.3;
+            z-index: -5;
+            object-fit: cover;
+        }
         
         form {
             width: 500px;
@@ -117,6 +133,10 @@ main {
                         width: 80px;
                     }
                 }
+
+                button {
+                    background-color: white;
+                }
             }
         }
     }
@@ -127,7 +147,7 @@ main {
     flex-flow: column nowrap;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
     header {
     
         #sideNav {
@@ -174,5 +194,42 @@ main {
         position: relative;
         padding-left: 78px;
         font-size: 16px;
+    }
+
+    .bottomSection {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.3;
+            z-index: -5;
+            object-fit: cover;
+        }
+        
+        form {
+            width: auto;
+            fieldset {
+                padding-top: 20px;
+                div {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    padding: 10px 5px 5px 5px;
+
+                    label {
+                        width: 80px;
+                    }
+                }
+
+                button {
+                    background-color: white;
+                }
+            }
+        }
     }
 }
