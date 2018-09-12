@@ -1,0 +1,101 @@
+body {
+  background-color: #35363d;
+  color: #D2D7D3;
+  font-family: "Lucida Grande";
+  font-size: 16px;
+}
+
+header #sideNav {
+  background-color: #D2D7D3;
+  display: none;
+  flex-flow: column nowrap;
+  width: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  overflow-x: hidden;
+  padding-top: 22px;
+}
+header #sideNav a, header #sideNav span {
+  font-size: 16px;
+  padding: 5px 0px 6px 20px;
+  margin: 0px 20px 0px 0px;
+  text-decoration: none;
+  color: #35363d;
+}
+header #sideNav a:hover {
+  color: white;
+}
+header #sideNav a:visited {
+  color: #35363d;
+}
+header #sideNav a:active {
+  color: #9a9a9a;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+main section {
+  border: 2px solid white;
+  height: 100vh;
+  width: 100vw;
+}
+main .topSection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+main .middleSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+main .bottomSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+main .bottomSection form {
+  width: 500px;
+}
+main .bottomSection form fieldset {
+  padding-top: 20px;
+}
+main .bottomSection form fieldset div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 10px 5px 5px 5px;
+}
+main .bottomSection form fieldset div label {
+  width: 80px;
+}
+.openNavButton {
+  position: fixed;
+  right: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.closeNavButton {
+  position: relative;
+  padding-left: 80px;
+  font-size: 24px;
+}
+
+.labelsAndInputs {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Portfolio Demo</title>
+</head>
+<body>
+    <header>
+        <span>
+            <a onclick="openNav()"><i class="fas fa-bars openNavButton"></i></a>
+        </span>
+        <nav id="sideNav">
+            <a href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times closeNavButton"></i></a>
+            <a href="#about" onclick="closeNav()">About</span>
+            <a href="/photography.html">Photography</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <a name="about">
+            <section class="topSection">
+                <h1>Kevin Grayson</h1>
+                <h2>Full Stack Developer</h2>
+            </section>
+        </a>
+
+        <section class="middleSection">
+            <ul>
+                <li>
+                    theStack
+                    <ul>
+                        <li>
+                            MongoDB
+                        </li>
+                        <li>
+                            Express
+                        </li>
+                        <li>
+                            React ( + Redux )
+                        </li>
+                        <li>
+                            Node.js
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    theRest
+                    <ul>
+                        <li>
+                            VueJS
+                        </li>
+                        <li>
+                            Firebase
+                        </li>
+                        <li>
+                            postgreSQL
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <a name="contact">
+            <section class="bottomSection">
+                <form>
+                    <fieldset class="labelsAndInputs">
+                        <legend>Contact:</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input id="name" type="text"/>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" type="text"/>
+                        </div>
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <input id="phone" type="text"/>
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" cols="50" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button>Send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </a>
+    </main>
+
+</body>
+
+<script>
+        function openNav() {
+            document.getElementById("sideNav").style.display = "flex";
+        }
+        
+        function closeNav() {
+            document.getElementById("sideNav").style.display = "none";
+        }
+</script>
+
+</html>
