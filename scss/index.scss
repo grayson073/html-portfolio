@@ -120,7 +120,7 @@ main {
         }
         
         form {
-            width: 500px;
+            width: auto;
             fieldset {
                 padding-top: 20px;
                 div {
@@ -147,26 +147,136 @@ main {
     flex-flow: column nowrap;
 }
 
-@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
+
+// ************************************
+// *      START OF MEDIA QUERIES      *
+// ************************************
+
+@media only screen and (min-device-width : 460px) and (max-device-width : 675px) {
+    
     header {
     
         #sideNav {
             background-color: $nav-background-color;
             display: none;
             flex-flow: column nowrap;
-            width: 130px;
+            width: auto;
             height: 100vh;
             position: fixed;
             z-index: 1;
             top: 0px;
             right: 0px;
             overflow-x: hidden;
-            padding-top: 14px;
+            padding-top: 15px;
     
             a, span {
-                font-size: 14px;
+                font-size: 16px;
                 padding: 5px 0px 6px 20px;
-                margin: 0px 20px 0px 0px;
+                margin: 0px 0px 0px 0px;
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
+    
+    .openNavButton {
+        position: fixed;
+        right: 20px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    
+    .closeNavButton {
+        position: relative;
+        padding-left: 100px;
+        right: 22px;
+        font-size: 20px;
+    }
+    
+    main {
+        
+        .topSection {
+            align-items: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            object-fit: cover;
+    
+            h1, h2 {
+                font-family: 'Bungee Inline', cursive;
+                font-size: 30px;
+            }
+        }
+        .middleSection {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0.3;
+                z-index: -5;
+                object-fit: cover;
+            }
+        }
+        .bottomSection {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            
+            form {
+                width: auto;
+                fieldset {
+                    padding-top: 20px;
+                    div {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        padding: 10px 5px 5px 5px;
+    
+                        label {
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 459px) {
+
+    body {
+        background-color: $primary-color;
+        color: $secondary-color;
+        font-family: $font-stack;
+        font-size: 16px;
+        margin: 0px;
+    }
+    
+    header {
+    
+        #sideNav {
+            background-color: $nav-background-color;
+            display: none;
+            flex-flow: column nowrap;
+            width: auto;
+            height: 100vh;
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            right: 0px;
+            overflow-x: hidden;
+            padding-top: 15px;
+    
+            a, span {
+                font-size: 16px;
+                padding: 5px 0px 6px 20px;
+                margin: 0px 0px 0px 0px;
                 text-decoration: none;
                 color: $primary-color;
             }
@@ -187,49 +297,214 @@ main {
         position: fixed;
         right: 20px;
         padding-top: 20px;
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .closeNavButton {
         position: relative;
-        padding-left: 78px;
-        font-size: 16px;
+        padding-left: 100px;
+        right: 22px;
+        font-size: 20px;
     }
-
-    .bottomSection {
+    
+    main {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            position: absolute;
-            width: 100vw;
+        flex-flow: column nowrap;
+        section {
+            border: 2px solid white;
             height: 100vh;
-            opacity: 0.3;
-            z-index: -5;
-            object-fit: cover;
+            width: 100vw;
         }
         
-        form {
-            width: auto;
-            fieldset {
-                padding-top: 20px;
-                div {
-                    display: flex;
-                    flex-flow: row wrap;
-                    align-items: center;
-                    padding: 10px 5px 5px 5px;
+        .topSection {
+            align-items: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            object-fit: cover;
+    
+            h1, h2 {
+                font-family: 'Bungee Inline', cursive;
+                font-size: 23px;
+            }
+    
+            img {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0.3;
+                z-index: -5;
+                object-fit: cover;
+            }
+        }
+        .middleSection {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0.3;
+                z-index: -5;
+                object-fit: cover;
+            }
+        }
+        .bottomSection {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0.3;
+                z-index: -5;
+                object-fit: cover;
+            }
+            
+            form {
+                width: auto;
+                fieldset {
+                    padding-top: 20px;
+                    div {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        padding: 5px 5px 5px 5px;
+    
+                        label {
+                            width: 80px;
+                        }
 
-                    label {
-                        width: 80px;
+                        textarea {
+                            width: 190px;
+                        }
                     }
-                }
-
-                button {
-                    background-color: white;
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-device-width : 100px) and (max-device-width : 320px) {
+    
+    header {
+    
+        #sideNav {
+            background-color: $nav-background-color;
+            display: none;
+            flex-flow: column nowrap;
+            width: auto;
+            height: 100vh;
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            right: 0px;
+            overflow-x: hidden;
+            padding-top: 15px;
+    
+            a, span {
+                font-size: 16px;
+                padding: 5px 0px 6px 20px;
+                margin: 0px 0px 0px 0px;
+                text-decoration: none;
+                color: $primary-color;
+            }
+            
+            a:hover {
+                color: rgb(92, 20, 20);
+            }
+            a:visited{
+                color: $primary-color;
+            }
+            a:active{
+                color: rgb(154, 154, 154)
+            }
+        }
+    }
+    
+    .openNavButton {
+        position: fixed;
+        right: 20px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    
+    .closeNavButton {
+        position: relative;
+        padding-left: 100px;
+        right: 22px;
+        font-size: 20px;
+    }
+    
+    main {
+        
+        .topSection {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            object-fit: cover;
+    
+            h1, h2 {
+                font-family: 'Bungee Inline', cursive;
+                font-size: 13px;
+            }
+    
+            img {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0.3;
+                z-index: -5;
+                object-fit: cover;
+            }
+        }
+        .middleSection {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                opacity: 0.3;
+                z-index: -5;
+                object-fit: cover;
+            }
+        }
+        .bottomSection {
+            
+            form {
+                width: auto;
+                fieldset {
+                    div {
+                        display: flex;
+                        flex-flow: column wrap;
+                        align-items: center;
+                        padding: 0px 50px 0px 0px
+                        label {
+                            width: 30px;
+                        }
+
+                        textarea {
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .labelsAndInputs {
+        display: flex;
+        flex-flow: column nowrap;
     }
 }
