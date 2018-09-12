@@ -75,6 +75,7 @@ main {
         justify-content: center;
         object-fit: cover;
 
+// I think this font-size needs to get smaller on mobile. It starts running off the page pretty early
         h1, h2 {
             font-family: 'Bungee Inline', cursive;
             font-size: 50px;
@@ -88,7 +89,7 @@ main {
             height: 100vh;
             opacity: 0.3;
             z-index: -5;
-            object-fit: cover;
+            object-fit: cover; //  It worked! yay!
         }
     }
     .middleSection {
@@ -103,6 +104,7 @@ main {
         justify-content: center;
         align-items: center;
         
+//    Make sure you have a plan for dealing with this on smaller screens. 500px is large.
         form {
             width: 500px;
             fieldset {
@@ -127,6 +129,7 @@ main {
     flex-flow: column nowrap;
 }
 
+// Why are you targeting between these two sizes? What happens if it gets smaller?
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     header {
     
