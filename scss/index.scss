@@ -1,12 +1,13 @@
-$font-stack: "Lucida Grande"; 
-$primary-color: #a21d34;
-$secondary-color: #E4F1FE;
+$primary-color: #373535;
+$secondary-color: rgb(242, 243, 244);
 $nav-background-color: white;
+$header-font-family: 'Domine', serif;
+$body-font-family: 'Open Sans', sans-serif;
 
 body {
     background-color: $primary-color;
     color: $secondary-color;
-    font-family: $font-stack;
+    font-family: $body-font-family;
     font-size: 16px;
     margin: 0px;
 }
@@ -76,7 +77,7 @@ main {
         object-fit: cover;
 
         h1, h2 {
-            font-family: 'Bungee Inline', cursive;
+            font-family: $header-font-family;
             font-size: 50px;
         }
 
@@ -186,7 +187,6 @@ main {
             flex-flow: column nowrap;
     
             h1, h2 {
-                font-family: 'Bungee Inline', cursive;
                 font-size: 30px;
             }
         }
@@ -251,7 +251,6 @@ main {
             flex-flow: column nowrap;
     
             h1, h2 {
-                font-family: 'Bungee Inline', cursive;
                 font-size: 23px;
             }
         }
@@ -319,7 +318,6 @@ main {
             flex-flow: column wrap;
     
             h1, h2 {
-                font-family: 'Bungee Inline', cursive;
                 font-size: 20px;
             }
         }

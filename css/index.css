@@ -1,7 +1,7 @@
 body {
-  background-color: #a21d34;
-  color: #E4F1FE;
-  font-family: "Lucida Grande";
+  background-color: #373535;
+  color: #f2f3f4;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   margin: 0px;
 }
@@ -24,13 +24,13 @@ header #sideNav a, header #sideNav span {
   padding: 5px 0px 6px 20px;
   margin: 0px 20px 0px 0px;
   text-decoration: none;
-  color: #a21d34;
+  color: #373535;
 }
 header #sideNav a:hover {
   color: #5c1414;
 }
 header #sideNav a:visited {
-  color: #a21d34;
+  color: #373535;
 }
 header #sideNav a:active {
   color: #9a9a9a;
@@ -66,7 +66,7 @@ main .topSection {
   object-fit: cover;
 }
 main .topSection h1, main .topSection h2 {
-  font-family: "Bungee Inline", cursive;
+  font-family: "Domine", serif;
   font-size: 50px;
 }
 main .topSection img {
@@ -135,7 +135,7 @@ main .bottomSection form fieldset button {
     padding: 5px 0px 6px 20px;
     margin: 0px 10px 0px 0px;
     text-decoration: none;
-    color: #a21d34;
+    color: #373535;
   }
 
   .openNavButton {
@@ -154,7 +154,6 @@ main .bottomSection form fieldset button {
     flex-flow: column nowrap;
   }
   main .topSection h1, main .topSection h2 {
-    font-family: "Bungee Inline", cursive;
     font-size: 30px;
   }
   main .middleSection {
@@ -185,7 +184,7 @@ main .bottomSection form fieldset button {
     padding: 5px 0px 6px 20px;
     margin: 0px 10px 0px 0px;
     text-decoration: none;
-    color: #a21d34;
+    color: #373535;
   }
 
   .openNavButton {
@@ -207,7 +206,6 @@ main .bottomSection form fieldset button {
     flex-flow: column nowrap;
   }
   main .topSection h1, main .topSection h2 {
-    font-family: "Bungee Inline", cursive;
     font-size: 23px;
   }
   main .middleSection {
@@ -244,7 +242,7 @@ main .bottomSection form fieldset button {
     padding: 0px 0px 6px 20px;
     margin: 0px 0px 0px 0px;
     text-decoration: none;
-    color: #a21d34;
+    color: #373535;
   }
 
   .openNavButton {
@@ -263,7 +261,6 @@ main .bottomSection form fieldset button {
     flex-flow: column wrap;
   }
   main .topSection h1, main .topSection h2 {
-    font-family: "Bungee Inline", cursive;
     font-size: 20px;
   }
   main .middleSection {
